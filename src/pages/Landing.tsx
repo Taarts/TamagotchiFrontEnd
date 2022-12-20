@@ -9,7 +9,7 @@ export function Landing() {
   function getAllPets() {
     async function fetchPets() {
       const response = await axios(
-        'https://tamagotchi-tsa.herokuapp.com/api/Pets'
+        'https://tamagotchiAPI-2.herokuapp.com/api/Pets'
       )
 
       if (response.status === 200) {
@@ -21,9 +21,10 @@ export function Landing() {
   }
 
   return (
-    <div>
-      <h1>Landing Page</h1>
-      <Link to="/login">Login</Link>
-    </div>
+    <>
+      <div>
+        <h1>Landing Page</h1>
+      </div>
+    </>
   )
 }
