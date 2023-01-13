@@ -1,16 +1,73 @@
 :root {
   font: 16px / 1 sans-serif;
+  --color-primary: rgb(179, 63, 148);
+  --color-secondary: rgb(230, 99, 99);
+  --color-tertiary: rgb(114, 240, 184);
+  --color-fourth: rgb(181, 242, 215);
 }
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
-  height: 100%;
+  min-height: 100vh;
 }
 
 body {
   margin: 0;
-  min-height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+h1 {
+  font: 3rem / 1 sans-serif;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+h2 {
+  font: 2rem / 1 sans-serif;
+  color: var(--color-secondary);
+}
+
+header {
+  background-color: var(--color-tertiary);
+  padding: 0.1rem;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--color-fourth);
+  color: var(--color-primary);
+  padding: 1rem 0.1rem;
+  text-align: center;
+  height: 3rem;
+}
+
+#molang {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1000;
+  background-color: var(--color-primary);
+}
+.form-section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 3rem;
 }

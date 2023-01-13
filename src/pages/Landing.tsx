@@ -34,22 +34,26 @@ export function Landing() {
   return (
     <>
       <div>
-        <h2>Landing Page</h2>
-        <form
-          onSubmit={function (event) {
-            event.preventDefault()
-            handleCreatePet()
-          }}
-        />
-        <input
-          type="text"
-          placeholder="Pet Name"
-          value={newPetName}
-          onChange={function (event) {
-            setNewPetName(event.target.value)
-          }}
-        />
-        <button type="submit">Create Pet</button>
+        <section className="wrapper">
+          <h2>Landing Page</h2>
+          <section className="form-section">
+            <form
+              onSubmit={function (event) {
+                event.preventDefault()
+                handleCreatePet()
+              }}
+            />
+            <input
+              type="text"
+              placeholder="Pet Name"
+              value={newPetName}
+              onChange={function (event) {
+                setNewPetName(event.target.value)
+              }}
+            />
+            <button type="submit">Create Pet</button>
+          </section>
+        </section>
       </div>
     </>
   )
