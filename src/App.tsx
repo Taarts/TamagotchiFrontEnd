@@ -18,7 +18,7 @@ export function App() {
     <div>
       <header>
         <Link to="/">
-          <h1>Tamagotchi</h1>
+          <h1>🐣 Tamagotchi 🥚</h1>
         </Link>
       </header>
       <Routes>
@@ -26,7 +26,9 @@ export function App() {
         <Route path="/Pets/:id" element={<PetDetails />} />
         <Route path="*" element={<p>404: Not Found</p>} />
       </Routes>
-      <footer>by Amheiser</footer>
+      <footer>
+        <Link to="tricia@taarts.net">by Amheiser</Link>
+      </footer>
     </div>
   )
 }

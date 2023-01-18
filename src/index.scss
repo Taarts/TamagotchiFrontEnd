@@ -2,8 +2,8 @@
   font: 16px / 1 sans-serif;
   --color-primary: rgb(179, 63, 148);
   --color-secondary: rgb(230, 99, 99);
-  --color-tertiary: rgb(114, 240, 184);
-  --color-fourth: rgb(181, 242, 215);
+  --color-tertiary: rgb(158, 224, 244);
+  --color-fourth: rgb(173, 223, 200);
 }
 
 * {
@@ -33,7 +33,7 @@ h2 {
 }
 
 header {
-  background-color: var(--color-tertiary);
+  background: linear-gradient(var(--color-tertiary), var(--color-fourth));
   padding: 0.1rem;
   text-align: center;
 }
@@ -42,15 +42,18 @@ header {
   display: flex;
   flex-flow: column wrap;
   min-height: 100vh;
+  padding-top: 5rem;
   justify-content: center;
   align-items: center;
 }
 
 footer {
-  background-color: var(--color-fourth);
+  display: flex;
+  background-color: var(--color-tertiary);
   color: var(--color-primary);
-  padding: 1rem 0.1rem;
+  padding: 2rem 0.1rem;
   text-align: center;
+  justify-content: center;
   height: 3rem;
 }
 
@@ -70,4 +73,26 @@ footer {
   align-items: center;
   margin: 1rem;
   padding: 3rem;
+  border-radius: 0.75rem;
+}
+
+.form-section > * {
+  margin: 0.5rem;
+}
+
+article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 3rem;
+}
+
+ul {
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem;
+  background: linear-gradient(rgb(255, 239, 224), rgb(250, 199, 255));
+  border-radius: 0.5rem;
 }
